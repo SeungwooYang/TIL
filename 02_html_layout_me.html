@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+    <!-- 1.div : 레이아웃을 나타내는 엘리먼트 -->
+    <div style = "height: 100px; background-color:red;">
+        dss1
+        <p>dss0</p>
+        <p>dss0</p>
+    </div>
+
+    <div>dss2</div>
+    <div>dss3</div>
+
+    <!-- 2. table : 테이블 모양을 나타낼 때 사용하는 엘리먼트 -->
+    <!-- table>caption{테이블제목}+caption+thead>tr>th{thead$}*2^^tbody>tr>th{tbody$}*2-->
+    <!--  +:동일선상 엘리먼트 추가, ^^: 2개 상위레벨로 올라감-->
+<table>
+    <caption>테이블제목</caption>
+
+    <thead>
+        <tr>
+            <th>thead1</th>
+            <th>thead2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>tbody1</th>
+            <th>tbody2</th>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- 3. ul, li : 리스트 엘리먼트(강사님꺼 참고) 크롤링할때 많이보시게될거에요 -->
+<!-- ul>li{ul_li$3} -->
+
+<!--  4. a: 링크 엘리먼트-->
+<!-- href : 클릭했을 때 이동되는 url 링크
+    _blank는 새 탭으로 열려서 들어간다.
+ -->
+<!-- <a href="http://google.com" target="_blank">google</a> -->
+
+
+<!--  작가, 개발자(abusing을 유발한다.), 디자이너
+일 방문자 1000명 만들어주고 돈을 받는다.
+-->
+
+<!-- 5. img : 이미지 엘리먼트
+    src : 이미지 소스
+    alt : 이미지가 없을 때 문구를 보여줍니다.
+    (png에 g를 빼면 파일이 없는 파일일때 alt 문구를 띄워 줍니다.)
+-->
+<!-- <img style="width: 200px;" src="http://cdn.www.fastcampus.co.kr/wp-content/uploads/2017/11/fastcampus_logo_positive-1.png" alt="패스트캠퍼스"> -->
+
+<!-- 6. iframe : 아이프레임 엘리먼트 -->
+<!-- 웹페이지 안에 웹페이지를 보여주는 엘리먼트 입니다.
+    웹페이지 안에서 다른 웹페이지를 띄워줄 때 사용합니다.
+    이 내용을 알아야 크롤링을 할 수 있다.
+     -->
+    <!-- <iframe src="file:///C:/Users/yangseungwoo/Documents/dev/TIL/01_html_basic_me.html" width="400" height="400"></iframe> -->
+
+<!-- 7. text, radio, password, checkbox ... 입력 엘리먼트 -->
+<input type="text" name="" value="" placeholder="이메일"><br>
+<input type="password" name="" value="비밀번호"><br>
+<!-- radio버튼은 name 이름으로 그룹핑 됩니다. -->
+<!-- <input type="radio" name="radio1" value="">라디오1</input>
+<input type="radio" name="radio1" value="" checked>라디오1</input><br>
+<input type="radio" name="radio2" value="">라디오2</input>
+<input type="radio" name="radio2" value="">라디오2</input>
+<input type="radio" name="radio2" value="">라디오2</input><br>
+
+<input type="checkbox" name="" value="">체크박스1</input>
+<input type="checkbox" name="" value="">체크박스2</input> -->
+
+<!-- 8. textarea 여러줄을 입력받을 수 있는 엘리먼트 -->
+<textarea name="name" id ="" rows="8" cols="80" style="resize:none;"></textarea>
+
+<!-- 9. select, option : 여러가지 옵션을 선택할 수 있는 엘리먼트 -->
+<!-- select>option[value=$]{option $}*3 -->
+<select name="" id="">
+    <option value="1">option 1</option>
+    <option value="2">option 2</option>
+    <option value="3">option 3</option>
+</select>
+
+
+<!-- 10. button : 버튼을 나타내는 엘리먼트
+    할렘 코드를 http://로 바꾸겠습니다.
+    file 프로토콜을 따라가기때문에 http를 넣어줘야 합니다.-->
+<button type="button" name="button" onclick="javascript:(alert('hello'))" >Click</button>
+<!-- 대부분 강사님이 설명해주신 html 코드로 볼 수 있다. 네이버 구글 등
+    css selctor가 제일 중요합니다.
+    개발자 도구에서 어떤 코드를 크롤링하고싶을 때 css selctor가 쓰입니다.
+-->
